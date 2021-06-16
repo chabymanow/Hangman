@@ -1,26 +1,7 @@
-#
-#
-# ██████╗██╗  ██╗ █████╗ ██████╗ ██╗   ██╗    ███╗   ███╗ █████╗ ███╗   ██╗ ██████╗ ██╗    ██╗
-#██╔════╝██║  ██║██╔══██╗██╔══██╗╚██╗ ██╔╝    ████╗ ████║██╔══██╗████╗  ██║██╔═══██╗██║    ██║
-#██║     ███████║███████║██████╔╝ ╚████╔╝     ██╔████╔██║███████║██╔██╗ ██║██║   ██║██║ █╗ ██║
-#██║     ██╔══██║██╔══██║██╔══██╗  ╚██╔╝      ██║╚██╔╝██║██╔══██║██║╚██╗██║██║   ██║██║███╗██║
-#╚██████╗██║  ██║██║  ██║██████╔╝   ██║       ██║ ╚═╝ ██║██║  ██║██║ ╚████║╚██████╔╝╚███╔███╔╝
-# ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝    ╚═╝       ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚══╝╚══╝ 
-#                                                                                             
-#
-#                 ___         |              ( ( (             .                         |              _   _      #   ___         
-#     ooo          .|||.        |.===.       '. ___ .'       ,-_-|             )))         |.===.        '\\-//`     #  <_*_>     
-#    (o o)         (o o)        {}o o{}     '  (> <) '      ([o o])           (o o)        {}o o{}        (o o)      #  (o o)      
-#ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo----ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo--8---(_)--Ooo-
-###########################################################################################################################################
-#                                                                                                                                         #
 # Hangman game from Chabymanow                                                                                                            #
 # You can play against another player or the CPU.                                                                                         #
 # The CPU has a database with 212 words. You can edit this in the words.tx file.                                                          #
-#                                                                                                                                         #
-# This program can`t working perfectly in the editor, but it`s fine in the windows shell. I can`t check it on linux, but should be good   #
-#                                                                                                                                         #
-###########################################################################################################################################
+
 import random
 from os import system, name
 import os
@@ -102,8 +83,8 @@ def myClear():
         _= system('clear')
         
 def getWord():  
-    my_path = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
-    lines = open(my_path+"\\words.txt").read().splitlines()
+    #my_path = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
+    lines = open("words.txt").read().splitlines()
     ranNum = len(lines)
     x = random.randint(0, ranNum)
     word = lines[x-1]
