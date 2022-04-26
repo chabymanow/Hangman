@@ -1,7 +1,7 @@
 # Hangman game
 **This is a simple hangman game in terminal.**
-
-You can play against other person or the computer.
+---
+>You can play against other person or the computer.
 
 With other person, one person needs to write a word and the other person needs to guess it letter-by-letter.
 
