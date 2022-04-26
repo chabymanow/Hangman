@@ -1,5 +1,6 @@
 # Hangman game
 This is a simple hangman game in terminal.
+---
 
 You can play against other person or the computer.
 
